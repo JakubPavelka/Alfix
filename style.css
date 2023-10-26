@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: #2d414f;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 79.4rem;
+  /* padding: 0 3.2rem; */
+  margin: 0 auto;
+}
+
+/* FORM START */
+
+.heading__container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+}
+
+.main__heading {
+  font-size: 5.6rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.main__heading--text {
+  font-size: 1.8rem;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 50rem;
+  margin-bottom: 4rem;
+}
+
+input::placeholder {
+  color: #929aa3;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form__bg {
+  background-color: #f2f2f3;
+  padding: 4.8rem;
+}
+
+.leseniDostupnost__h3 {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.form__button--flex {
+  display: flex;
+}
+
+.prodej,
+.pronajem {
+  font-size: 2rem;
+  border: 1px solid #d5dbe1;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  color: #929aa3;
+  width: 50%;
+  padding: 1.2rem 0rem 1.2rem 0;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.prodej:hover,
+.pronajem:hover {
+  color: #747980;
+  border: 1px solid #b3b9be;
+}
+
+.pronajem.active {
+  border: 1px solid #006cb6;
+  font-weight: 700;
+  color: #006cb6;
+  border-radius: 0.4rem;
+}
+
+.pronajem.active:hover {
+  color: #006cb6;
+  border: 1px solid #006cb6;
+}
+
+/* DRUH LESENI START **************************************** */
+
+.leseni__col--1 {
+  display: flex;
+  gap: 2rem;
+}
+
+.leseni__row--1 {
+  width: 50%;
+}
+
+.leseni__row--1 h4,
+.leseni__row--2 h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.leseni__row--2 {
+  width: 50%;
+}
+.pobocka,
+.leseni {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1.3rem 0;
+  color: #929aa3;
+  border: 1px solid #d5dbe1;
+  border-radius: 0.4rem;
+  padding-left: 1.2rem;
+  margin-bottom: 4rem;
+  appearance: none;
+}
+
+.pobocka:focus,
+.leseni:focus {
+  border: 1px solid #d5dbe1;
+}
+
+.select__container {
+  position: relative;
+}
+
+.icon__container {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.3rem;
+}
+
+.chevron2 {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.3rem;
+}
+
+option {
+  color: #2d414f;
+  font-size: 1.6rem;
+}
+
+option[value=""] {
+  display: none;
+}
+
+/* DRUH LESENI END **************************************** */
+
+/* KONTAKTNI UDAJE START ******************* */
+
+.kontaktniUdaje__h3 {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.kontaktniUdaje__col--1 {
+  display: flex;
+  gap: 2rem;
+}
+
+.kontaktniUdaje__row--1 {
+  width: 50%;
+}
+.kontaktniUdaje__row--1 h4,
+.kontaktniUdaje__row--2 h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.kontaktniUdaje__row--2 {
+  width: 50%;
+}
+
+.jmenoprijmeni {
+  width: 100%;
+  padding: 1.3rem 0 1.3rem 1.2rem;
+
+  font-size: 1.6rem;
+  border: 1px solid #d5dbe1;
+  border-radius: 0.4rem;
+}
+
+.telefon__flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.predcisli {
+  width: 25%;
+  font-size: 1.6rem;
+  padding: 1.3rem 0 1.3rem 0.4rem;
+
+  appearance: none;
+  border: 1px solid #d5dbe1;
+  border-radius: 0.4rem;
+}
+
+.cislo {
+  width: 75%;
+  padding: 1.3rem 0 1.3rem 1.2rem;
+
+  font-size: 1.6rem;
+  border: 1px solid #d5dbe1;
+  border-radius: 0.4rem;
+}
+
+/* KONTAKTNI UDAJE END ******************* */
+
+/* EMAIL ICO START ************* */
+
+.kontaktniUdaje__col--2 {
+  display: flex;
+  gap: 2rem;
+}
+
+.kontaktniUdaje__col2__row--1,
+.kontaktniUdaje__col2__row--2 {
+  width: 50%;
+}
+
+.kontaktniUdaje__col2__row--1 h4,
+.kontaktniUdaje__col2__row--2 h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-top: 2.4rem;
+}
+
+.ico,
+.email {
+  width: 100%;
+  padding: 1.3rem 0 1.3rem 1.2rem;
+
+  font-size: 1.6rem;
+  border: 1px solid #d5dbe1;
+  border-radius: 0.4rem;
+  color: #2d414f;
+}
+
+/* EMAIL ICO END ************* */
+
+/* KONTAKTNI UDAJE START ************** */
+
+.kontaktniUdaje__col3__row--1 {
+  width: 100%;
+}
+.kontaktniUdaje__col3__row--1 h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-top: 2.4rem;
+}
+
+.mistopouzivani {
+  width: 100%;
+  padding: 1.3rem 0 1.3rem 1.2rem;
+
+  font-size: 1.6rem;
+  border: 1px solid #d5dbe1;
+  border-radius: 0.4rem;
+}
+
+/* KONTAKTNI UDAJE END ************** */
+
+/* PODROBNOSTI START ************ */
+
+.podrobnosti h3 {
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2.4rem;
+}
+
+.podrobnosti h4 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 14.4rem;
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  padding-left: 1.2rem;
+  padding-top: 1.8rem;
+  border: 1px solid #d5dbe1;
+  border-radius: 0.4rem;
+  margin-bottom: 2.4rem;
+}
+
+/* PODROBNOSTI END ************ */
+
+/* NAHRAT SOUBOR START *************** */
+
+.nahratSoubor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  background-color: #fff;
+  border: 1px dashed #2d414f;
+  padding: 1.9rem 0;
+  border-radius: 0.4rem;
+}
+
+.nahratSoubor img {
+}
+
+.nahratSoubor p {
+  font-size: 1.6rem;
+  color: #2d414f;
+}
+
+/* NAHRAT SOUBOR END *************** */
+
+/* ODESLAT NEZAVAZNE START */
+
+.submit {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #006cb6;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1.2rem 3.5rem;
+  border-radius: 0.4rem;
+  max-width: 35rem;
+  margin-top: 2.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* ODESLAT NEZAVAZNE END */
+
+select {
+  /* Arrow */
+  appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M11 1L6 6L1 1' stroke='%232D414F' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.2rem top 53%;
+  background-size: 1.2rem auto;
+}
+
+.predcisli {
+  appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M11 1L6 6L1 1' stroke='%232D414F' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.2rem top 53%;
+  background-size: 1rem auto;
+}
+
+/* MQ **************************************** */
+
+@media (max-width: 760px) {
+  .predcisli {
+    background-position: right 0.6rem top 53%;
+    background-size: 0.8rem auto;
+  }
+}
+
+@media (max-width: 641px) {
+  .form__bg {
+    padding: 3.6rem 4rem;
+  }
+
+  .prodej,
+  .pronajem {
+    font-size: 1.8rem;
+  }
+
+  .leseni__col--1 {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .leseni__row--2,
+  .leseni__row--1 {
+    width: 100%;
+  }
+
+  .leseniDostupnost__h3 {
+    font-size: 1.8rem;
+  }
+
+  .pobocka {
+    margin-bottom: 3.2rem;
+  }
+
+  select.leseni {
+    margin-bottom: 0;
+  }
+
+  .leseni__row--1 h4,
+  .leseni__row--2 h4 {
+    margin-top: 2rem;
+  }
+  /* KONTAKTNI UDAJE START ************************ */
+
+  .kontaktniUdaje__h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .kontaktniUdaje__col--1 {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .kontaktniUdaje__row--1,
+  .kontaktniUdaje__row--2 {
+    width: 100%;
+  }
+
+  .predcisli {
+    width: 20%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 1rem;
+
+    background-position: right 0.6rem top 53%;
+    background-size: 1.1rem auto;
+  }
+
+  .cislo {
+    width: 80%;
+  }
+
+  /* KONTAKTNI UDAJE END ************************ */
+
+  /* PODROBNOSTI START ********************* */
+
+  .podrobnosti h3 {
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  /* PODROBNOSTI END ********************* */
+}
+
+@media (max-width: 430px) {
+  .main__heading {
+    font-size: 3.6rem;
+    line-height: normal;
+    margin-bottom: 1.6rem;
+  }
+
+  .form__bg {
+    padding: 3rem 1.6rem;
+  }
+  /* KONTAKTNI UDAJE START ******************** */
+
+  .telefon__flex {
+    gap: 0.2rem;
+  }
+
+  .predcisli {
+    width: 30%;
+  }
+
+  .cislo {
+    width: 70%;
+  }
+
+  .kontaktniUdaje__col--2 {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .kontaktniUdaje__col2__row--1 {
+    width: 100%;
+  }
+
+  .kontaktniUdaje__col2__row--2 {
+    width: 100%;
+  }
+
+  .kontaktniUdaje__col2__row--2 h4 {
+    margin-top: 0;
+  }
+
+  /* KONTAKTNI UDAJE END ******************** */
+
+  .zprava {
+    padding: 1.1rem 0 0 0.8rem;
+  }
+
+  .submit {
+    padding: 1.2rem 2rem;
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONT AWESOME ICONS -->
+    <title>Alfix</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading__container">
+        <h1 class="main__heading">Poptávkový formulář</h1>
+        <p class="main__heading--text">
+          Vyplňte prosím následující poptávkový formulář a my brzy připravíme
+          lešení určené právě Vám.
+        </p>
+      </div>
+
+      <div class="form__bg">
+        <h3 class="leseniDostupnost__h3">Lešení a dostupnost</h3>
+        <div class="form__button--flex">
+          <a class="prodej" href="#">Prodej</a>
+          <a class="pronajem active" href="#">Pronájem</a>
+        </div>
+
+        <!-- DRUH LESENI START **************** -->
+        <form action="">
+          <div class="leseni__col--1">
+            <div class="leseni__row--1">
+              <h4 class="leseni__h4">Druh lešení</h4>
+
+              <select required class="leseni" name="leseni" id="leseni">
+                <option class="option__gray" value="">
+                  Vyberte druh lešení
+                </option>
+                <option value="xx">xxx</option>
+                <option value="xx">xxx</option>
+                <option value="xx">xxx</option>
+              </select>
+            </div>
+            <div class="leseni__row--2">
+              <h4 class="leseni__h4">Pobočka</h4>
+
+              <select required class="pobocka" name="pobocka" id="pobocka">
+                <option value="">Vyberte pobočku</option>
+                <option value="xx">xxx</option>
+                <option value="xx">xxx</option>
+                <option value="xx">xxx</option>
+                <i class="fa-solid fa-chevron-down"></i>
+              </select>
+            </div>
+          </div>
+
+          <!-- DRUH LESENI END **************** -->
+
+          <div class="form__kontaktniUdaje--flex">
+            <h3 class="kontaktniUdaje__h3">Kontaktní údaje</h3>
+            <!-- KONTAKTNI UDAJE COL 1 START ************** -->
+
+            <div class="kontaktniUdaje__col--1">
+              <!-- ROW 1 START ***************** -->
+
+              <div class="kontaktniUdaje__row--1">
+                <h4>Jméno a příjmení / Obchodní firma*</h4>
+                <input
+                  class="jmenoprijmeni"
+                  type="text"
+                  name="jmenoprijmeni"
+                  id="jmenoprijmeni"
+                  placeholder="Jméno a příjmení"
+                  required
+                />
+              </div>
+
+              <!-- ROW 1 END ***************** -->
+
+              <!-- ROW 2 START ***************** -->
+
+              <div class="kontaktniUdaje__row--2">
+                <h4>Telefon*</h4>
+                <div class="telefon__flex">
+                  <select class="predcisli" name="predcisli" id="">
+                    <option value="+420">+420</option>
+                    <option value="+420">+420</option>
+                    <option value="+420">+420</option>
+                  </select>
+
+                  <input
+                    class="cislo"
+                    type="number"
+                    name="cislo"
+                    id="cislo"
+                    placeholder="Telefoní číslo"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- ROW 2 END ***************** -->
+            </div>
+            <!-- KONTAKTNI UDAJE COL 1 END ************** -->
+
+            <!-- KONTAKTNI UDAJE COL 2 START ************** -->
+
+            <div class="kontaktniUdaje__col--2">
+              <!-- EMAIL ST *************************** -->
+
+              <div class="kontaktniUdaje__col2__row--1">
+                <h4>Email*</h4>
+                <input
+                  class="email"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mailová adresa"
+                  required
+                />
+              </div>
+
+              <!-- EMAIL KON *************************** -->
+
+              <!-- ICO START ***************** -->
+
+              <div class="kontaktniUdaje__col2__row--2">
+                <h4>IČO</h4>
+                <input
+                  class="ico"
+                  type="text"
+                  name="ico"
+                  id="ico"
+                  placeholder="IČO"
+                />
+              </div>
+
+              <!-- ICO KONEC ***************** -->
+            </div>
+            <!-- KONTAKTNI UDAJE COL 2 END ************** -->
+
+            <!-- KONTAKTNI UDAJE COL 3 START ******************* -->
+
+            <div class="kontaktniUdaje__col3__row--1">
+              <h4>Místo používání lešení</h4>
+              <input
+                class="mistopouzivani"
+                type="text"
+                name="mistopouzivani"
+                id="mistopouzivani"
+                placeholder="Adresa"
+              />
+            </div>
+
+            <!-- KONTAKTNI UDAJE COL 3 END ******************* -->
+          </div>
+
+          <!-- PODROBNOSTI K POPTAVCE START *************** -->
+
+          <div class="podrobnosti">
+            <h3>Podrobnosti k poptávce</h3>
+            <h4>Zpráva</h4>
+            <textarea
+              class="zprava"
+              name="zprava"
+              id="zprava"
+              placeholder="Vaše zpráva"
+            ></textarea>
+          </div>
+
+          <!-- PODROBNOSTI K POPTAVCE END ***************** -->
+
+          <!-- NAHRAT SOUBOR START *************** -->
+
+          <a href="#" class="nahratSoubor">
+            <img src="./img/export.svg" alt="Export icon" />
+            <p>Nahrát soubor</p>
+          </a>
+
+          <!-- NAHRAT SOUBOR END *************** -->
+
+          <!-- ODESLAT NEZAVAZNE START ************ -->
+
+          <!-- <a class="poptavka__btn" href="#"> Odeslat nezávaznou poptávku </a> -->
+          <input
+            class="submit"
+            type="submit"
+            value="Odeslat nezávaznou poptávku"
+          />
+
+          <!-- ODESLAT NEZAVAZNE END ************ -->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
